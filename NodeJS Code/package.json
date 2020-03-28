@@ -1,0 +1,21 @@
+{
+  "name": "sesweb",
+  "version": "1.0.0",
+  "description": "A Web Application for the Smart Energy Saver Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raunaq Pahwa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "canvas": "^2.6.0",
+    "chart.js": "^2.9.0",
+    "express": "^4.17.1",
+    "json2csv": "^4.5.4",
+    "moment": "^2.24.0",
+    "mqtt": "^3.0.0",
+    "socket.io": "^2.3.0"
+  }
+}

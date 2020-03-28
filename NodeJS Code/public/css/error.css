@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+*:focus{
+    outline: none;
+}
+body{
+    background-image: linear-gradient(90deg,#FDDF46,#17D5D1);
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

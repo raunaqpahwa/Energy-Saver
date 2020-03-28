@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/homepage.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="status-card">
+            <h1 id="dashboard">My Dashboard</h1>
+            <div class="nested-card">
+                <h1 id="state">The state of the circuit</h1>
+                <h1 id="thresholdValue">Threshold will appear here</h1>
+                <h1 id="powerValue">Power will appear here</h1>
+            </div>
+            
+    </div>
+    <div class="appliance-control">
+        <h1 id="control">Control Appliance</h1>
+        <div class="controls">
+            <div class="onoff">
+                    <button id="on" type="button">On</button>
+                    <button id="off" type="button">Off</button>
+            </div>
+            <div class="thresholdcontrol">
+                <form>
+                    <label for="threshold">Threshold</label>
+                    <input name="threshold" id="threshold" type="number" placeholder="New Threshold" onkeypress="return noenter()">
+                    <button id="submitThreshold" type="button">Submit</button>
+                </form>
+            </div>
+            <div class="gencharts">
+                <button id = "generateLine" type="button">Analyse Power</button>
+                <button id="generatePie" type="button">Power vs Threshold</button>
+            </div>
+        </div>
+    </div>
+    <div class="charts">
+        <div class="lineChart">
+                <canvas id="lineCompare"></canvas>
+        </div>
+        <div class="final">
+            <div class="remaining">
+                <h1 id="remainingu">Remaining units are </h1>
+            </div>
+                <div class="pieChart">
+                        <canvas id="pieCompare"></canvas>
+                </div>
+        </div>
+    </div>
+    <div id="modal">
+        <i class="fas fa-exclamation-triangle fa-2x"></i>
+        <p id="modal-text">You have reached the threshold. Switching off your devices.</p>
+        <button id="modal-btn" type="button">Okay</button>
+    </div>
+    <script src="/Chart.bundle.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/homepage.js"></script>
+</body>
+</html>
