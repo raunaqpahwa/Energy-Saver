@@ -9,10 +9,10 @@
   "author": "Raunaq Pahwa",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "canvas": "^2.6.0",
     "chart.js": "^2.9.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "json2csv": "^4.5.4",
     "moment": "^2.24.0",
     "mqtt": "^3.0.0",
